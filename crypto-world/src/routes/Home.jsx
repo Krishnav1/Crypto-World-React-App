@@ -1,8 +1,11 @@
 import React from 'react'
+import CoinSearch from '../components/CoinSearch'
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <div>Home</div>
+    <div>
+      <CoinSearch coins={props.coins} />
+    </div>
   )
 }
 
