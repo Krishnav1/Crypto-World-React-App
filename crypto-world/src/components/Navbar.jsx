@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -10,10 +10,11 @@ const Navbar = () => {
         setNav(!nav)
     }
 
+
   return (
     <div className="rounded-div flex items-center justify-between h-20 font-bold">
         <Link to='/'>
-            <h1 className='text-2xl'>Cryto World</h1>
+            <h1 className='text-2xl ml-5'>Cryto World</h1>
         </Link>
 
         <div className='hidden md:block'>
